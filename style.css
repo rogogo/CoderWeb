@@ -1,0 +1,193 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+.TituloColorH2 {
+    color: firebrick;
+}
+.TituloColorH3 {
+    color:darkred;
+    margin-bottom: 30px;
+}
+
+.ParrafoColor1 {
+    color: darkslategrey;
+}
+.ParrafoColor2 {
+    color: grey;
+    background-color: bisque;
+}
+H1 {
+    font-size: 60px !important; 
+    font-family: 'Grandstander', cursive !important;
+}
+h2 {
+    font-size: 20px;
+    color: darkred;
+}
+.Cabecera {
+    display: flex;
+    justify-content: center;
+    padding: 20px 20px;
+}
+.Logo {
+    width: 900px;
+    display: flex;
+    justify-content: left;
+}
+.Titulos {
+    color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 5px;
+    padding-left: 100px;
+}
+.CabeceraMenu {
+    background-color:#333;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.Menu {
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.MenuInterno {
+    list-style: none;
+    padding: 0;
+    margin: 5px;
+    background: #333;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    text-align: center;
+}
+.MenuInterno li a {
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: .10em 1em;
+}
+.MenuInterno li a:hover {
+    background: brown;
+    color: white;
+}
+
+.QuienesSomos {
+    margin: 20px;
+    margin-bottom: 40px;
+    display: flex;
+}
+
+.Destacados {
+    margin: 20px;
+    margin-bottom: 40px;
+}
+.DestacadosNombres {
+    display: flex;
+    margin-top: 40px;
+    width: 100%;
+    height: 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+.DestacadosGraficos {
+    display: flex;
+    margin-top: 5px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.DestacadosDescribe {
+    display: flex;
+    margin-top: 5px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.Parrafos {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin: 50px;
+}
+.DondeEstamos {
+    margin: 20px;
+    margin-bottom: 40px;
+}
+.CentrarImagen {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.A {
+    flex-direction: column;
+}
+ul, ol {
+    list-style: none;
+}
+.TituloVideo {
+    width: 100%;
+    height: 100%;
+}
+
+.animacion {
+    transform: rotate(360deg);
+    animation-name: enfoque;
+    animation-duration: 2s;
+    transition: all 1s ease 0.5s;
+    -webkit-transition: all 1s ease 0.5s; /* Chrome */
+    -moz-transition: all 1s ease 0.5s;  /* Mozilla */
+    -o-transition: all 1s ease 0.5s; /* Opera */
+    -ms-transition: all 1s ease 0.5s;  /* Explorer */
+}
+
+.animacion:hover {
+    transform: scale(1.2,1.2);
+}
+
+.Contactanos {
+    margin: 20px;
+    margin-bottom: 40px;
+}
+
+.AjusteForm {
+    display: flex;
+    margin-bottom: 5px;
+    width: 250px;
+    justify-content: space-between;
+}
+.AjusteForm2 {
+    display: flex;
+    margin-bottom: 15px;
+    width: 250px;
+    justify-content: center;
+    align-items: center;
+}
+/* Tablet Styles */
+@media only screen and (min-width: 401px ) and (max-width: 960px){
+    body {
+        background-color:rgb(243, 224, 199);
+    }
+    .QuienesSomos {
+        flex-wrap: wrap;
+    }
+    .TituloVideo {
+        width: 50%;
+        height: 50%;
+    }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px){
+    .page {
+        width: 960px;
+        margin: 0 auto;
+    }
+}
